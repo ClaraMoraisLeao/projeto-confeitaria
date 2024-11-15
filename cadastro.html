@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Carrinho</title>
+    <link rel="stylesheet" href="geral.css" media="all" />
+    <link rel="stylesheet" href="styles/conta/conta.css" media="screen" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="styles/imagens/favicon-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="cabecalho">
+        <img
+          src="styles/imagens/logo-header-sem-fundo.png"
+          alt=""
+          width="20%"
+          height="10%"
+          id="logo-header"
+        />
+      <div id="div-carrinho">
+          <a id="link-carrinho" href="carrinho.html">
+              <img
+                  id="icone-carrinho"
+                  src="styles/imagens/carrinho-de-compras.png"
+                  alt="icone-carrinho"
+              />
+          </a>
+          <img src="styles/imagens/notificacao-carrinho.png" alt="" id="icone-notificacao">
+      </div>
+      </div>
+      <div id="div-titulo">
+        <h1 class="titulo-header">
+          Confeitaria <br />
+          Kelly Romero
+        </h1>
+      </div>
+      <nav id="menu">
+        <ul id="lista-menu">
+          <li id="home"><a href="index.html">Home</a></li>
+          <li><a href="#contatos">Contato</a></li>
+          <li id="conta"><a href="cadastro.html">Conta</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="subtitulo">Minha conta</h2>
+
+      <form id="form-cadastro" action="" autocomplete="on">
+        <h3>Cadastro</h3>
+        <label for="">Nome</label>
+        <input type="text" autocomplete="name" />
+
+        <label for="">E-mail</label>
+        <input type="email" autocomplete="email" />
+
+        <label for="">Senha</label>
+        <input type="password" autocomplete="pass" />
+
+        <button type="submit" class="botao-1">Cadastrar</button>
+        <button class="botao-2">
+          <a href="login.html">Já tenho cadastro</a>
+        </button>
+      </form>
+      <div id="wpp">
+        <a href="https://abrir.link/NXTsj">
+          <p>Entre em contato aqui</p>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <div id="contatos">
+        <p>Email: kellyromero@gmail.com</p>
+        <p>Whatsapp: 82 99311-7683</p>
+        <p>Endereço: Av. Antônio Lisboa de Amorim, 1751 - Benedito Bentes, Maceió - AL, 57084-700</p>
+        <p>Horário de atendimento: seg à sex, 10h às 18h</p>
+      </div>
+
+      <div id="acompanhe">
+        <h4>ACOMPANHE</h4>
+        <div id="acompanhe-img">
+          <a href="https://www.instagram.com/">
+            <img src="styles/imagens/instagram.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com">
+            <img src="styles/imagens/facebook (1).png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="scripts/util.js" defer></script>
+  <script src="scripts/bolos/bolos-decorados.js" defer></script>
+  <script src="scripts/bolos/bolos-simples.js" defer></script>
+</html>

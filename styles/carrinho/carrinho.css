@@ -1,0 +1,113 @@
+:root {
+    --cor0:#f5f5f5;
+    --cor1:#E67E85;
+    --cor2:#E44257;
+    --cor3:#E2AFA2;
+    --cor4:#000000; 
+}
+@media all { /* mobile / geral */
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    button#limpar-carrinho {
+        margin: 10px;
+        padding: 5px;
+        background-color: var(--cor1);
+        color: var(--cor0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.8em;
+        width: 150px;
+        height: 30px;
+    }
+    button#limpar-carrinho:hover {
+        background-color: var(--cor2);
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    div#carrinho-display {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 60%;
+    }
+    div.item-carrinho {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        border: 1px solid var(--cor2);
+    }
+
+    div.item-carrinho button{
+        margin: 10px;
+        padding: 5px;
+        background-color: var(--cor1);
+        color: var(--cor0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.8em;
+        width: 150px;
+        height: 30px;
+    }
+
+    div.item-carrinho button:hover{
+        background-color: var(--cor2);
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    button#botao-comprar {
+        
+        margin: 10px;
+        padding: 5px;
+        background-color: var(--cor1);
+        color: var(--cor0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.8em;
+        width: 250px;
+        height: 70px;
+    }
+    button#botao-comprar:hover {
+        background-color: var(--cor2);
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+    button#botao-comprar > a {
+        text-decoration: none;
+        color: var(--cor0);
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 576px) { /* tablet */
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width: 1200px) { /* desktop */
+    main {
+        margin: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        
+    }
+    div#carrinho-display {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 25%;
+    }
+    
+}
